@@ -1,0 +1,78 @@
+@import "./vars.scss";
+
+.cart {
+  display: grid;
+  grid-template-columns: 786px 379px;
+  column-gap: $m-gap;
+  padding-bottom: 36px;
+
+  &__items {
+    display: flex;
+    flex-flow: column;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+
+  &__wrap {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 198px;
+    row-gap: $m-gap;
+    margin-bottom: 50px;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    column-gap: 7px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cart {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    &__items {
+      .cart__items {
+        margin-bottom: $m-gap;
+      }
+    }
+
+    &__btn-wrapper {
+      margin-bottom: 64px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cart {
+    align-items: stretch;
+  }
+
+  .cart__header {
+    display: none;
+  }
+
+  .cart__wrap {
+    grid-auto-rows: 168px;
+    row-gap: $xs-gap;
+  }
+
+  .cart__btn {
+    width: 166px;
+  }
+}

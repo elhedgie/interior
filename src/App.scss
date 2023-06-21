@@ -1,0 +1,69 @@
+@import "./vars.scss";
+
+// common
+
+.btn {
+  border-radius: 50px;
+  font-family: inherit;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $grey-header;
+    color: $white;
+  }
+
+  &--white {
+    border: 1px solid #040404;
+    background-color: #fff;
+    transition: all 0.3s ease;
+
+    &:disabled {
+      background-color: $grey-font;
+      color: $white;
+      cursor: auto;
+    }
+  }
+
+  &--black {
+    background-color: $black;
+    color: $white;
+    border: 1px solid $black;
+    transition: all 0.3s ease;
+  }
+}
+
+.container {
+  max-width: $medium;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.text--warning {
+  text-align: center;
+  font-size: $desktop-title;
+  margin-bottom: $m-gap;
+}
+
+@media (max-width: $medium) {
+  .container {
+    max-width: $small;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $small) {
+  .container {
+    max-width: auto;
+  }
+
+  .wrap {
+    padding: 0 $xs-padding;
+  }
+
+  .content {
+    padding: 0 $xs-padding;
+  }
+}

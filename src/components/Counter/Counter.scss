@@ -1,0 +1,43 @@
+@import "./vars.scss";
+
+.cart {
+  &__counter-btn {
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    &:hover path {
+      stroke: $black;
+    }
+
+    &--inc {
+      grid-area: inc;
+    }
+
+    &--dec {
+      grid-area: dec;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__quantity {
+    display: grid;
+    grid-template-columns: 13px 13px 16px;
+    grid-template-rows: 16px 16px;
+    grid-template-areas:
+      "num num inc"
+      "num num dec";
+    align-items: center;
+    align-self: start;
+    padding: 10px 14px;
+    background-color: $grey-background;
+    border-radius: 6px;
+  }
+
+  &__num {
+    text-align: center;
+    width: 100%;
+    grid-area: num;
+    font-family: "Poppins", sans-serif;
+  }
+}

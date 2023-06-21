@@ -1,0 +1,64 @@
+@import "./vars.scss";
+
+.order {
+  &__wrap {
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    padding: 42px 27px;
+    max-width: 100%;
+    min-width: 376px;
+    min-height: 556px;
+    background-color: $grey-background;
+    border-radius: 20px;
+  }
+
+  &__heading {
+    margin: 0;
+    margin-bottom: $m-gap;
+    font-size: $desktop-title;
+  }
+
+  &__form {
+    display: flex;
+    flex-flow: column;
+  }
+
+  &__input {
+    border: none;
+    border-bottom: 1px solid $grey-decoration;
+  }
+
+  &__input-wrap {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    min-height: 143px;
+    margin-bottom: 64px;
+  }
+
+  &__sum {
+    margin: 0;
+    margin-bottom: 18px;
+    font-size: $desktop-title;
+    text-align: center;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    width: 290px;
+    padding: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+}
+
+@media (max-width: $small) {
+  .order__wrap {
+    min-width: auto;
+    max-width: none;
+  }
+}

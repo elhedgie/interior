@@ -1,0 +1,21 @@
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 51px 32px;
+
+  &__item img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

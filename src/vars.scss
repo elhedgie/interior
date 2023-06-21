@@ -1,0 +1,30 @@
+/* из-за того, что макет моковый, с переменными и их неймингом особо не разгуляешься: 
+иногда цвета разные, иногда отступы рандомные, поэтому в этом проекте скорее просто показываю, что могу, но без них можно было обойтись :)
+*/
+
+// colors
+
+$black: #000;
+$white: #fff;
+$grey-decoration: #cacdd8;
+$grey-font: #888;
+$grey-background: #f7f6f6;
+$grey-header: #ccc;
+
+// breakpoints
+
+$small: 768px;
+$medium: 1200px;
+
+// margins, gaps, paddings
+
+$m-gap: 32px;
+$xs-gap: 24px;
+$xs-padding: 16px;
+
+// fonts
+
+$desktop-font: 14px;
+$mobile-font: 12px;
+$desktop-title: 24px;
+$mobile-title: 18px;

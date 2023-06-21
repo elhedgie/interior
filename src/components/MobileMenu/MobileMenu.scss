@@ -1,0 +1,30 @@
+@import "./vars.scss";
+
+.cart-amount--mobile {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -9px;
+  left: -8px;
+  background-color: red;
+  border-radius: 50%;
+  color: $white;
+  font-weight: 500;
+}
+
+.nav__mobile-link {
+  & svg {
+    fill: $white;
+  }
+
+  &:hover svg {
+    fill: $grey-font;
+  }
+
+  &:last-child {
+    position: relative;
+  }
+}
