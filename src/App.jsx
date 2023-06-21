@@ -5,10 +5,10 @@ import { HashRouter } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { fetchCartItems } from "redux/cartItemsSlice";
 
-import { Cart } from "./components/Cart/Cart";
-import { Catalogue } from "./components/Catalogue/Catalogue";
+import { Cart } from "./pages/Cart/Cart";
+import { Catalogue } from "./pages/Catalogue/Catalogue";
 import { Header } from "./components/Header/Header";
-import { NotFound } from "./components/404/NotFound";
+import { NotFound } from "./pages/404/NotFound";
 
 import "./App.scss";
 
